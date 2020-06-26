@@ -10,6 +10,160 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+		<style type="text/css">
+			
+			
+<style>
+body{
+margin: 0;
+padding: 0;
+background-color: #ccc;
+}
+.contactlinks {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0;
+padding: 0;
+display: flex;
+
+}
+.contactlinks li{
+list-style: none;
+margin: 0 40px;
+
+}
+ .contactlinks li .fa{
+font-size: 40px;
+//color: #262626;
+line-height: 80px;
+transition: .5s;
+
+}
+.contactlinks li a{
+position: relative;
+display: block;
+width: 80px;
+height: 80px;
+background-color: #fff;
+text-align: center;
+transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+transition: .5s;
+box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+text-decoration: none;
+}
+.contactlinks li a::before{
+content: "";
+position: absolute;
+top: 10px;
+left: -20px;
+height: 100%;
+width: 20px;
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg) skewY(-45deg);
+} 
+.contactlinks li a::after{
+content: "";
+position: absolute;
+top: 80px;
+left: -11px;
+height: 20px;
+width: 100%;
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg) skewX(-45deg);
+}
+.contactlinks li a:hover{
+transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+
+
+
+.contactlinks li:hover .fa{
+fill: #fff;
+}
+.contactlinks li a:hover{
+transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+.contactlinks li:hover:nth-child(1) a{
+background: #3b5999;
+}
+
+.contactlinks li:hover:nth-child(1) a:before{
+
+background: #2e4a86;
+}
+.contactlinks li:hover:nth-child(1) a:after{
+background: #4a69ad;
+}
+
+
+
+
+
+
+.contactlinks li:hover:nth-child(2) a{
+background: #55acee;
+}
+.contactlinks li:hover:nth-child(2) a:before{
+background: #4184b7;
+}
+.contactlinks li:hover:nth-child(2) a:after{
+background: #4d9fde;
+}
+
+.contactlinks li:hover:nth-child(3) a{
+background: #0077B5;
+}
+
+.contactlinks li:hover:nth-child(3) a:before{
+background: #036aa0;
+}
+.contactlinks li:hover:nth-child(3) a:after{
+background: #0d82bf;
+}
+
+.contactlinks li:hover:nth-child(4) a{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+.contactlinks li:hover:nth-child(4) a:before{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+.contactlinks li:hover:nth-child(4) a:after{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+.fa-facebook{
+	fill: #4267b2;
+}
+.fa-linkedin{
+
+ fill: #0077b5;
+}
+.fa-twitter{
+	fill:#00acee; 
+}
+.fa-instgarm{
+	fill: #f00075;
+}
+
+.fa svg{
+
+
+	width: 50px;
+
+}
+
+
+
+</style>
+
+
 		<title>Contact</title>
 	</head>
 	<body>
@@ -35,17 +189,43 @@
 			
 		</nav>
 
+	<div>
 
+	<ul class="mbm_social contactlinks">
+	<li><a class="social-facebook" href="https://www.facebook.com/marveapp/">
+		<i class="fa fa-facebook"><small>
+			<svg Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310"><defs><style>.cls-1{}</style></defs><path class="cls-1" d="M81.7,165.11h34V305a5,5,0,0,0,5,5H178.3a5,5,0,0,0,5-5V165.76h39.06a5,5,0,0,0,5-4.42l5.93-51.51a5,5,0,0,0-5-5.57h-45V72c0-9.73,5.24-14.67,15.58-14.67H228.3a5,5,0,0,0,5-5V5a5,5,0,0,0-5-5H187.75c-.28,0-.92,0-1.85,0-7,0-31.49,1.38-50.81,19.15-21.4,19.69-18.43,43.27-17.71,47.36v37.75H81.7a5,5,0,0,0-5,5v50.85A5,5,0,0,0,81.7,165.11Z"/></svg>
+		</small></i>
+		<div class="tooltip"><span>facebook</span></div>
+		</a>
+	</li>
+	<li><a class="social-twitter" href="http://twitter.com/enabolme">
+		<i class="fa fa-twitter"><small>
+			<svg id="Logo_FIXED" data-name="Logo — FIXED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><style>.cls-1{}</style></defs><path class="cls-1"  d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"/></svg>
+		</small></i>
+		<div class="tooltip"><span>Twitter</span></div>
+		</a>
+	<li><a class="social-linkedin" href="http://www.linkedin.com/company/enabol">
+		<i class="fa  fa-linkedin"><small>
+			<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1011.12 966.55"><defs><style>.cls-1{}</style></defs><title></title><path class="cls-1" d="M250.21,141.48c0,62.51-47,112.62-122.61,112.62h-1.41c-72.78,0-119.75-50.16-119.75-112.62,0-64,48.47-112.76,122.57-112.76S248.85,77.47,250.21,141.48Zm-231,853.75H236v-652H19.16ZM768,327.92c-115,0-166.46,63.15-195.39,107.67v2.09h-1.41a11.45,11.45,0,0,0,1.41-2.09V343.23H355.88c2.82,61.1,0,652.05,0,652.05H572.63V631.12c0-19.63,1.31-38.85,7.13-52.88,15.72-38.8,51.42-79.37,111.12-79.37,78.54,0,109.94,59.92,109.94,147.51v348.9h216.74V621.44C1017.6,421,910.57,327.92,768,327.92Z" transform="translate(-6.44 -28.72)"/></svg>
+		</small></i>
+		<div class="tooltip"><span>linkedin</span></div>
+		</a>
+	</li>
+	<li><a class="social-instagram-plus" href="https://www.instagram.com/enabol.me/">
+		<i class="fa fa-instgarm"><small>
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.cls-1{}</style></defs><title>instagram</title><path class="cls-1" d="M256,49.47c67.27,0,75.23.26,101.8,1.47,24.56,1.12,37.9,5.22,46.78,8.67a78,78,0,0,1,29,18.85,78,78,0,0,1,18.85,29c3.45,8.88,7.55,22.22,8.67,46.78,1.21,26.57,1.47,34.53,1.47,101.8s-.26,75.23-1.47,101.8c-1.12,24.56-5.22,37.9-8.67,46.78a83.51,83.51,0,0,1-47.81,47.81c-8.88,3.45-22.22,7.55-46.78,8.67-26.56,1.21-34.53,1.47-101.8,1.47s-75.24-.26-101.8-1.47c-24.56-1.12-37.9-5.22-46.78-8.67a78,78,0,0,1-29-18.85,78,78,0,0,1-18.85-29c-3.45-8.88-7.55-22.22-8.67-46.78-1.21-26.57-1.47-34.53-1.47-101.8s.26-75.23,1.47-101.8c1.12-24.56,5.22-37.9,8.67-46.78a78,78,0,0,1,18.85-29,78,78,0,0,1,29-18.85c8.88-3.45,22.22-7.55,46.78-8.67,26.57-1.21,34.53-1.47,101.8-1.47m0-45.39c-68.42,0-77,.29-103.87,1.52S107,11.08,91,17.3A123.68,123.68,0,0,0,46.36,46.36,123.68,123.68,0,0,0,17.3,91c-6.22,16-10.48,34.34-11.7,61.15S4.08,187.58,4.08,256s.29,77,1.52,103.87S11.08,405,17.3,421a123.68,123.68,0,0,0,29.06,44.62A123.52,123.52,0,0,0,91,494.69c16,6.23,34.34,10.49,61.15,11.71s35.45,1.52,103.87,1.52,77-.29,103.87-1.52S405,500.92,421,494.69A128.74,128.74,0,0,0,494.69,421c6.23-16,10.49-34.34,11.71-61.15s1.52-35.45,1.52-103.87-.29-77-1.52-103.87S500.92,107,494.69,91a123.52,123.52,0,0,0-29.05-44.62A123.68,123.68,0,0,0,421,17.3c-16-6.22-34.34-10.48-61.15-11.7S324.42,4.08,256,4.08Z"/><path class="cls-1" d="M256,126.64A129.36,129.36,0,1,0,385.36,256,129.35,129.35,0,0,0,256,126.64ZM256,340a84,84,0,1,1,84-84A84,84,0,0,1,256,340Z"/><circle class="cls-1" cx="390.48" cy="121.52" r="30.23"/></svg></small></i>
+		<div class="tooltip"><span>instagram</span></div>
+		</a>
+	</li>
+</ul>
 
-
-
-
-
-
-
-
-
-
+</div>
+<div class="jumbotron">
+    <h1>Network</h1>      
+    <p>The primary method to contact us is at <a href="mailto:marve@enabolme.com">marve@enabolme.com</a>. We are also responsive on our social networks.</p>
+  </div>           
+</div>
 
 
 
